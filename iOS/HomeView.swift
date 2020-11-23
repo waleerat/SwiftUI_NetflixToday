@@ -11,6 +11,7 @@ struct HomeView: View {
     var vm = HomeVM()
     
     var body: some View {
+        
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
@@ -21,7 +22,8 @@ struct HomeView: View {
                         VStack {
                             HStack {
                                 Text(category)
-                                    
+                                    .font(.title3)
+                                    .bold() 
                                 Spacer()
                             }
                             ScrollView(.horizontal , showsIndicators: false){
