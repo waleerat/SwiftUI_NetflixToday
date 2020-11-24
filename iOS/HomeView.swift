@@ -19,10 +19,14 @@ struct HomeView: View {
                 // Main VStack
                 ScrollView {
                     LazyVStack {
+                        // Top Menu
+                        TopRowButton()
+                            .zIndex(0)
                         
-                        TopMoviePreview(movie: exampleMovie1)
+                        TopMoviePreview(movie: exampleMovie3)
                             .frame(width: geometry.size.width)
                             .padding(.top, -110)
+                            .zIndex(-1)
                         
                         ForEach(vm.allCategories, id: \.self) { category in
                             VStack {
@@ -55,5 +59,49 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+    }
+}
+
+struct TopRowButton: View {
+    var body: some View {
+        HStack {
+            Button(action: {
+                //action after click bnt
+            }, label: {
+                Image("netflix_logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 50)
+            })
+            .buttonStyle(PlainButtonStyle())
+            Spacer()
+            
+            Button(action: {
+                //action after click bnt
+            }, label: {
+                Text("TV Show")
+            })
+            .buttonStyle(PlainButtonStyle())
+            Spacer()
+            
+            Button(action: {
+                //action after click bnt
+            }, label: {
+                Text("Movies")
+            })
+            .buttonStyle(PlainButtonStyle())
+            Spacer()
+            
+            Button(action: {
+                //action after click bnt
+            }, label: {
+                Text("My List")
+            })
+            .buttonStyle(PlainButtonStyle())
+            
+        }
+        //.background(Color.black)
+        .padding(.leading, 10)
+        .padding(.trailing,30)
     }
 }

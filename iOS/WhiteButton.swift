@@ -33,7 +33,6 @@ struct WhiteButton: View {
             .cornerRadius(3.0)
         })
         
-        
     }
 }
 
