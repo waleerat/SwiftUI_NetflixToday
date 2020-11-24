@@ -9,10 +9,10 @@ import SwiftUI
 
 struct HomeView: View {
     var vm = HomeVM()
+    let screen = UIScreen.main.bounds
     
-    var body: some View {
-        
-        GeometryReader { geometry in
+    var body: some View { 
+       
             ZStack {
                 Color.black
                     .edgesIgnoringSafeArea(.all)
@@ -20,11 +20,11 @@ struct HomeView: View {
                 ScrollView {
                     LazyVStack {
                         // Top Menu
-                        TopRowButton()
+                        TopRowButton()  // Extract SubView : move tag to subview
                             .zIndex(0)
                         
                         TopMoviePreview(movie: exampleMovie3)
-                            .frame(width: geometry.size.width)
+                            .frame(width: screen.size.width)
                             .padding(.top, -110)
                             .zIndex(-1)
                         
@@ -52,7 +52,7 @@ struct HomeView: View {
                 
             }
             .foregroundColor(.white)
-        }
+        
     }
 }
 
