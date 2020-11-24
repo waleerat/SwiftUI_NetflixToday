@@ -21,7 +21,7 @@
 		AB427B3A256C6EE200603EE7 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB427B39256C6EE200603EE7 /* HomeVM.swift */; };
 		AB623A5A256C7AEA00AB9782 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB623A59256C7AEA00AB9782 /* TopMoviePreview.swift */; };
 		AB623A73256C84AF00AB9782 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB623A72256C84AF00AB9782 /* SmallVerticalButton.swift */; };
-		AB623A76256C888900AB9782 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB623A75256C888900AB9782 /* WhiteButton.swift */; };
+		AB623A76256C888900AB9782 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB623A75256C888900AB9782 /* PlayButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 		AB427B39256C6EE200603EE7 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		AB623A59256C7AEA00AB9782 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		AB623A72256C84AF00AB9782 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
-		AB623A75256C888900AB9782 /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
+		AB623A75256C888900AB9782 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +151,7 @@
 			children = (
 				AB623A59256C7AEA00AB9782 /* TopMoviePreview.swift */,
 				AB623A72256C84AF00AB9782 /* SmallVerticalButton.swift */,
-				AB623A75256C888900AB9782 /* WhiteButton.swift */,
+				AB623A75256C888900AB9782 /* PlayButton.swift */,
 				AB427B32256C6C0600603EE7 /* StandardHomeMovie.swift */,
 			);
 			path = HelperViews;
@@ -242,7 +242,7 @@
 				AB055453256DBE7F001E1F3E /* Episods.swift in Sources */,
 				AB427B33256C6C0600603EE7 /* StandardHomeMovie.swift in Sources */,
 				AB623A73256C84AF00AB9782 /* SmallVerticalButton.swift in Sources */,
-				AB623A76256C888900AB9782 /* WhiteButton.swift in Sources */,
+				AB623A76256C888900AB9782 /* PlayButton.swift in Sources */,
 				AB055450256DB830001E1F3E /* MovieDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
