@@ -8,11 +8,11 @@
 import SwiftUI
 import KingfisherSwiftUI
 
-struct StandardHomeMovieView: View {
+struct StandardHomeMovie: View {
     var movie: Movie
     
     var body: some View {
-        KFImage(movie.thumnailUIR)
+        KFImage(movie.thumnailURL)
             .resizable()
             .scaledToFill()
     }
@@ -20,6 +20,6 @@ struct StandardHomeMovieView: View {
 
 struct StandardHomeMovieView_Previews: PreviewProvider {
     static var previews: some View {
-        StandardHomeMovieView(movie: exampleMovie1) 
+        StandardHomeMovie(movie: exampleMovie1) 
     }
 }
