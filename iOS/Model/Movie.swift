@@ -8,32 +8,42 @@
 import Foundation
 
 struct Movie: Identifiable {
-    var id: String  // = UUID().uuidString
+    var id: String
     var name: String
-    var thumnailURL: URL
+    var thumbnailURL: URL
     
     var categories: [String]
     
     // MovieDetail View
     var year: Int
     var rating: String
-    var numberOfSeasions: Int?
-    var promotionHeadLine: String?
+    var numberOfSeasons: Int?
     
     // Personalization
-    var currentEpisode: CurrentEpisodsInfo?
-    var defaultEpisodeInfo: CurrentEpisodsInfo
+    var currentEpisode: CurrentEpisodeInfo?
+    
+    
+    var defaultEpisodeInfo: CurrentEpisodeInfo
     var creators: String
     var cast: String
     
-    var numberOfseasionsDisplay: String {
-        if let num = numberOfSeasions {
+    var moreLikeThisMovies: [Movie]
+    
+    var episodes: [Episode]?
+    
+    var promotionHeadline: String?
+    
+    var trailers: [Trailer]
+    
+    var numberOfSeasonsDisplay: String {
+        if let num = numberOfSeasons {
             if num == 1 {
                 return "1 season"
             } else {
                 return "\(num) seasons"
             }
         }
+        
         return ""
     }
     
@@ -52,10 +62,10 @@ struct Movie: Identifiable {
             return defaultEpisodeInfo.description
         }
     }
+    
 }
 
-
-struct CurrentEpisodsInfo: Hashable, Equatable {
+struct CurrentEpisodeInfo: Hashable, Equatable {
     var episodeName: String
     var description: String
     var season: Int

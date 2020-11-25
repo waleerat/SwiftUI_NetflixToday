@@ -7,6 +7,7 @@
 
 import SwiftUI
 import KingfisherSwiftUI
+// https://github.com/onevcat/Kingfisher
 
 struct TopMoviePreview: View {
     var movie: Movie
@@ -14,7 +15,7 @@ struct TopMoviePreview: View {
     var body: some View {
         
         ZStack {
-            KFImage(movie.thumnailURL)
+            KFImage(movie.thumbnailURL)
                 .resizable()
                 .scaledToFill()
                 .clipped()
@@ -59,7 +60,7 @@ struct TopMoviePreview: View {
                  } 
                  
             }
-            .background(LinearGradient.blackopacityGradient
+            .background(LinearGradient.blackOpacityGradient
                             .padding(.top, 250)
             )
              
