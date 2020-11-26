@@ -67,11 +67,6 @@ struct CustomTabSwitcher: View {
     }
 }
 
-enum CustomTab: String {
-    case episodes = "EPISODES"
-    case trailers = "TRAILERS & MORE"
-    case more = "MORE LIKE THIS"
-}
 
 struct CustomTabSwitcher_Previews: PreviewProvider {
     static var previews: some View {

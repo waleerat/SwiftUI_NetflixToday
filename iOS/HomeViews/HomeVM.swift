@@ -15,8 +15,21 @@ class HomeVM: ObservableObject {
         movies.keys.map({String($0)})
     }
     
-    public func getMovie(forCate cate: String) -> [Movie] {
-        return movies[cate] ?? []
+    public var allGenre: [homeGenre] = [.AllGenres, .Action, .Comedy, .Horror, .Thriler]
+    
+    public func getMovie(forCate cate: String, andHomeRow homeRow: HomeTopRow, andGenre genre: homeGenre) -> [Movie] {
+        // $0.movieType == .movie  : forEach loop and check any movie has type .movie will pass the fillter and
+        switch homeRow {
+        case .home :
+            return movies[cate] ?? []
+        case .movies:
+            return (movies[cate] ?? []).filter({$0.movieType == .movie})
+        case .tvShows:
+            return (movies[cate] ?? []).filter({$0.movieType == .tvShow})
+        case .myList:
+            return movies[cate] ?? []
+        }
+         
     }
     
     init() {

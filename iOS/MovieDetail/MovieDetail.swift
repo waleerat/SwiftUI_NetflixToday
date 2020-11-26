@@ -66,6 +66,7 @@ struct MovieDetail: View {
                 }
                 .foregroundColor(.white)
                 
+                // show popup screen
                 if showSeasonPicker {
                     // start Group
                     Group {
