@@ -18,6 +18,8 @@
 		AB1A49DD256E72A500CD7A27 /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A49DB256E72A500CD7A27 /* SwiftUIVideoView.swift */; };
 		AB1A49E3256FAD1000CD7A27 /* EnumValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A49E2256FAD0F00CD7A27 /* EnumValues.swift */; };
 		AB1A49E6256FB68A00CD7A27 /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A49E5256FB68A00CD7A27 /* HomeStack.swift */; };
+		AB1A49EB2570305000CD7A27 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A49EA2570305000CD7A27 /* SearchBar.swift */; };
+		AB1A49EE257032AE00CD7A27 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A49ED257032AE00CD7A27 /* Colors.swift */; };
 		AB427B05256C677600603EE7 /* NetflixTodayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB427B04256C677600603EE7 /* NetflixTodayApp.swift */; };
 		AB427B07256C677600603EE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB427B06256C677600603EE7 /* ContentView.swift */; };
 		AB427B09256C677800603EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB427B08256C677800603EE7 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		AB1A49DB256E72A500CD7A27 /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
 		AB1A49E2256FAD0F00CD7A27 /* EnumValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumValues.swift; sourceTree = "<group>"; };
 		AB1A49E5256FB68A00CD7A27 /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
+		AB1A49EA2570305000CD7A27 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		AB1A49ED257032AE00CD7A27 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		AB427B01256C677600603EE7 /* NetflixToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB427B04256C677600603EE7 /* NetflixTodayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixTodayApp.swift; sourceTree = "<group>"; };
 		AB427B06256C677600603EE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 			children = (
 				AB427B35256C6C4500603EE7 /* GlobalHelpers.swift */,
 				AB1A49E2256FAD0F00CD7A27 /* EnumValues.swift */,
+				AB1A49ED257032AE00CD7A27 /* Colors.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				AB623AB5256DB54500AB9782 /* HelperViews */,
 				AB25726D256DB5E700CDE932 /* Model */,
 				AB25726F256DB5FF00CDE932 /* Helpers */,
+				AB1A49EA2570305000CD7A27 /* SearchBar.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -284,9 +290,11 @@
 				AB1A49D6256E724D00CD7A27 /* EpisodesView.swift in Sources */,
 				AB427B07256C677600603EE7 /* ContentView.swift in Sources */,
 				AB427B2F256C6B7B00603EE7 /* Movie.swift in Sources */,
+				AB1A49EB2570305000CD7A27 /* SearchBar.swift in Sources */,
 				AB623A5A256C7AEA00AB9782 /* TopMoviePreview.swift in Sources */,
 				AB1A49D7256E724D00CD7A27 /* TrailerList.swift in Sources */,
 				AB427B05256C677600603EE7 /* NetflixTodayApp.swift in Sources */,
+				AB1A49EE257032AE00CD7A27 /* Colors.swift in Sources */,
 				AB055453256DBE7F001E1F3E /* Episode.swift in Sources */,
 				AB427B33256C6C0600603EE7 /* StandardHomeMovie.swift in Sources */,
 				AB5C9A7F256E6AC2002CA188 /* MoreLikeThis.swift in Sources */,
