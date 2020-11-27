@@ -14,6 +14,14 @@ enum MovieType {
 }
 
 
+// SearchMV.swift
+enum ViewState{
+    case empty
+    case loading
+    case ready
+    case error
+}
+
 // HOmeViews
 enum HomeTopRow: String, CaseIterable {
     case home = "Home"
