@@ -9,7 +9,7 @@ import SwiftUI
 import KingfisherSwiftUI
 import AVKit
 
-struct CommingSoonRow: View {
+struct ComingSoonRow: View {
     var movie: Movie
     
     @Binding var movieDetailToShow: Movie?
@@ -81,7 +81,7 @@ struct CommingSoonRow_Previews: PreviewProvider {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
-            CommingSoonRow(movie: exampleMovie1, movieDetailToShow: .constant(nil))
+            ComingSoonRow(movie: exampleMovie1, movieDetailToShow: .constant(nil))
         }
     }
 }
