@@ -200,7 +200,7 @@ struct MovieBottons: View {
                 // do some thing
             }
             
-            SmallVerticalButton(text: "Rate", isOnImage: "hand.thumbup.fill", isOffImage: "hand.thumbup", isOn: true) {
+            SmallVerticalButton(text: "Rate", isOnImage: "hand.thumbsup.fill", isOffImage: "hand.thumbup", isOn: true) {
                 // do some thing
             }
             

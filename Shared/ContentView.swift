@@ -22,7 +22,7 @@ struct ContentView: View {
                     Image(systemName: "house")
                     Text("Home")
                 }.tag(0)
-            Text("Search")
+            SearchView()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Search")
@@ -30,17 +30,17 @@ struct ContentView: View {
             Text("Comming Soon")
                 .tabItem {
                     Image(systemName: "play.rectangle")
-                    Text("Secound")
+                    Text("Comming Soon")
                 }.tag(0)
             Text("Download")
                 .tabItem {
                     Image(systemName: "arrow.down.to.line.alt")
-                    Text("Secound")
+                    Text("Download")
                 }.tag(0)
             Text("More")
                 .tabItem {
                     Image(systemName: "equal")
-                    Text("Secound")
+                    Text("More")
                 }.tag(0)
             
         }

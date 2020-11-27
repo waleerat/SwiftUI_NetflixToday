@@ -8,12 +8,12 @@
 import Foundation
 import SwiftUI
 
-class searchVM: ObservableObject {
+class SearchVM: ObservableObject {
     
     @Published var isLoading: Bool = false
     @Published var viewState: ViewState = ViewState.ready
     
-    @Published var popularMoview: [Movie] = []
+    @Published var popularMovies: [Movie] = []
     @Published var searchResults: [Movie] = []
     
     @Published var isShowingPupularMovies = true
@@ -36,7 +36,7 @@ class searchVM: ObservableObject {
     }
     
     private func getPupularMovies() {
-        self.popularMoview = generateMovies(40)
+        self.popularMovies = generateMovies(40)
     }
     
     private func getSearchResults(forText text: String) {
