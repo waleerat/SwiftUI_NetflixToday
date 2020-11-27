@@ -41,6 +41,8 @@
 		AB4E6EC52571257900D4170A /* ComingSoonVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4E6EC42571257900D4170A /* ComingSoonVM.swift */; };
 		AB4E6ECB2571278500D4170A /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4E6ECA2571278500D4170A /* TrackableScrollView.swift */; };
 		AB4E6ECF25712CBE00D4170A /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4E6ECE25712CBE00D4170A /* DownloadView.swift */; };
+		AB4E6ED425715A5300D4170A /* MoviePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4E6ED325715A5300D4170A /* MoviePreviewCell.swift */; };
+		AB4E6ED925717B5600D4170A /* MoviePreviewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4E6ED825717B5600D4170A /* MoviePreviewRow.swift */; };
 		AB5C9A7F256E6AC2002CA188 /* MoreLikeThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5C9A7E256E6AC2002CA188 /* MoreLikeThis.swift */; };
 		AB623A5A256C7AEA00AB9782 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB623A59256C7AEA00AB9782 /* TopMoviePreview.swift */; };
 		AB623A73256C84AF00AB9782 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB623A72256C84AF00AB9782 /* SmallVerticalButton.swift */; };
@@ -83,6 +85,8 @@
 		AB4E6EC42571257900D4170A /* ComingSoonVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonVM.swift; sourceTree = "<group>"; };
 		AB4E6ECA2571278500D4170A /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
 		AB4E6ECE25712CBE00D4170A /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
+		AB4E6ED325715A5300D4170A /* MoviePreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePreviewCell.swift; sourceTree = "<group>"; };
+		AB4E6ED825717B5600D4170A /* MoviePreviewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePreviewRow.swift; sourceTree = "<group>"; };
 		AB5C9A7E256E6AC2002CA188 /* MoreLikeThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLikeThis.swift; sourceTree = "<group>"; };
 		AB623A59256C7AEA00AB9782 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		AB623A72256C84AF00AB9782 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 				AB5C9A7D256E6A91002CA188 /* MovieDetail */,
 				AB1A49D9256E729100CD7A27 /* VideoPlayer */,
 				AB623AB5256DB54500AB9782 /* HelperViews */,
+				AB4E6ED625717B2400D4170A /* Preview */,
 				AB25726D256DB5E700CDE932 /* Model */,
 				AB25726F256DB5FF00CDE932 /* Helpers */,
 			);
@@ -231,6 +236,15 @@
 				AB4E6ECE25712CBE00D4170A /* DownloadView.swift */,
 			);
 			path = Download;
+			sourceTree = "<group>";
+		};
+		AB4E6ED625717B2400D4170A /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				AB4E6ED325715A5300D4170A /* MoviePreviewCell.swift */,
+				AB4E6ED825717B5600D4170A /* MoviePreviewRow.swift */,
+			);
+			path = Preview;
 			sourceTree = "<group>";
 		};
 		AB5C9A7D256E6A91002CA188 /* MovieDetail */ = {
@@ -341,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB4E6ED925717B5600D4170A /* MoviePreviewRow.swift in Sources */,
 				AB427B36256C6C4500603EE7 /* GlobalHelpers.swift in Sources */,
 				AB4E6EC52571257900D4170A /* ComingSoonVM.swift in Sources */,
 				AB4E6EB82571186500D4170A /* ComingSoon.swift in Sources */,
@@ -368,6 +383,7 @@
 				AB1A49EE257032AE00CD7A27 /* Colors.swift in Sources */,
 				AB4E6EA725704BD700D4170A /* SearchView.swift in Sources */,
 				AB055453256DBE7F001E1F3E /* Episode.swift in Sources */,
+				AB4E6ED425715A5300D4170A /* MoviePreviewCell.swift in Sources */,
 				AB427B33256C6C0600603EE7 /* StandardHomeMovie.swift in Sources */,
 				AB5C9A7F256E6AC2002CA188 /* MoreLikeThis.swift in Sources */,
 				AB055458256DD55C001E1F3E /* CustomTabSwitcher.swift in Sources */,
